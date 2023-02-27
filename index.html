@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="UTF-8" />
+        <title>TAKAX MUSIC LINKS Test</title>
+
+        
+        <style>
+
+            .container {
+                display: flex;
+                flex-direction: row;
+            }
+            
+            .left-column, .right-column {
+                flex: 0 0 200px;
+            }
+            
+            .content {
+                flex: 1 0 0;
+            }
+            
+            @media screen and (max-width: 900px) {
+                .left-column, .right-column {
+                    display: none;
+                }
+                
+                .content {
+                    flex: 1 0 100%;
+                }
+            }
+
+            /* 検証 */
+
+            @media screen and (max-width: 650px) {
+            /* ページ幅が 650px 以下の場合 */
+                .up {
+                    display: 650px;
+                }
+            }
+
+            @media screen and (min-width: 899px) {
+            /* ページ幅が 899px 以上の場合 */
+                .up {
+                    display: none;
+                }
+            }
+
+
+
+            /* 検証 */
+
+            body {
+                background-color: rgb(198, 255, 185);
+            }
+
+            header {
+                grid-area: header;
+            }
+
+            .bgc {
+                background-color: rgb(234, 255, 239);
+            }
+            .blink {
+                -webkit-animation: blink 3s ease-in-out infinite;
+                animation: blink 2s ease-in-out infinite;
+            }
+            @-webkit-keyframes blink {
+                0% {opacity: 0;}
+                100% {opacity: 1;}
+            }
+            @keyframes blink {
+                0% {opacity: 0;}
+                100% {opacity: 1;}
+            }
+
+            .under {
+                background: linear-gradient(transparent 40%, #a1ef707f 50%);
+            }
+            .takax {
+                text-decoration : underline;
+                color:  rgb(66, 119, 244);
+            }
+            main   {
+                grid-area: center;
+                font-size: 1rem;
+                margin: 0;
+            }
+            ul {
+                list-style: square;
+            }
+            li {
+                margin: 0;
+                padding: 0;
+            }
+            nav    {
+                grid-area: left;  
+            }
+            a[href] {
+                color: rgb(46, 106, 246);
+            }
+            
+            .title {
+                background-color: rgb(28, 188, 0);
+                color: white;
+            }
+            a[href]:hover {
+                background-color: rgba(159, 226, 250, 0.855);
+            }
+            a:active{
+                color : rgb(206, 255, 133);
+            }
+            p {
+                text-align:center;
+            }
+            a{
+                text-decoration: none;
+                text-align: left;
+            }
+            .info {
+                background-color: rgb(250, 255, 224);
+                max-width: 900px;
+                min-width: 650px;
+                margin: auto;
+                font-size: 20px;
+            }
+            .edit {
+                text-align: center;
+                font-size: 13px;
+            }
+            .Playlist {
+                text-align: center;
+                font-size: 17px;
+            }   
+            
+        </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="picture">
+            <h2 style="text-align:center">
+            <img src="https://user-images.githubusercontent.com/119456328/205171697-dabcb502-55c9-49a0-be62-d0b2760faac3.jpg"><br>
+            <title>TAKAX MUSIC WEB</title>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left-column">
+            <div class="bgc">
+                <h2 class="title" style="text-align:center"><a name="Library"><b>Library</b></h2>
+            <ul>
+                <li><a href="#Beat Music">Beat Music</a></li>
+                <li><a href="#Lo-Fi Beats">Lo-Fi Beats</a></li>
+                <li><a href="#Wagakki - Shamisen Beats">Wagakki</a></li>
+                <li><a href="#Piano">Piano</a></li>
+                <li><a href="#Free To Use">Free To Use</a></li>
+            </ul>
+        
+            <h2 class="title" style="text-align:center"><a name="Contact">Contact</a></h2>
+            <ul>
+                <li><a href="https://www.instagram.com/takax_music/" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/TakaxMusic_" target="_blank">Twitter</a></li>
+                <li><a href="https://soundcloud.com/takax-music" target="_blank">SoundCloud</a></li>
+                <li><a href="https://www.youtube.com/channel/UC7hE2BE8Cf-7aqFawvWrHxQ" target="_blank">TAKAX MUSIC</a></li>
+            </ul>
+        
+            </div>
+            
+        </div>
+
+        <div class="content">
+            
+            <!-- 検証 -->
+            <div class="up">
+
+                <div class="bgc">
+                    <h2 class="title" style="text-align:center"><a name="Library"><b>Library</b></h2>
+                <ul>
+                    <li><a href="#Beat Music">Beat Music</a></li>
+                    <li><a href="#Lo-Fi Beats">Lo-Fi Beats</a></li>
+                    <li><a href="#Wagakki - Shamisen Beats">Wagakki</a></li>
+                    <li><a href="#Piano">Piano</a></li>
+                    <li><a href="#Free To Use">Free To Use</a></li>
+                </ul>
+            
+                <h2 class="title" style="text-align:center"><a name="Contact">Contact</a></h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/takax_music/" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/TakaxMusic_" target="_blank">Twitter</a></li>
+                    <li><a href="https://soundcloud.com/takax-music" target="_blank">SoundCloud</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC7hE2BE8Cf-7aqFawvWrHxQ" target="_blank">TAKAX MUSIC</a></li>
+                </ul>
+            
+                <h2 class="title" style="text-align:center"><a name="Playlist">Playlist</a></h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=yrMhjD_Hi2w&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&ab_channel=TAKAXMUSIC" target="_blank">BEATS Play List</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=iiOzoSkmqgc&list=PLEmsMKDtatMWyDoDrcGvZWqFmcwd6f2GE&ab_channel=TAKAXMUSIC" target="_blank">Lo-Fi Play List</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=DayAW2X10EY&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_" target="_blank">Free To Use Play List</a></li>
+                </ul>
+                <br>  
+
+            </div>
+            </div>
+            <!-- 検証 -->
+    
+            <div style="text-align:center">
+                <div class="info">
+                <h2 class="title" style="text-align:center"><a name="How to use this page">◆ How to use this page ◆</a></h2>
+            You can tap the Title and jump to the Page!<br>
+            ▼ Tap this title ▼<br>
+            <div class="blink"><a href="https://www.youtube.com/channel/UC7hE2BE8Cf-7aqFawvWrHxQ" target="_blank"><span class="takax">TAKAX MUSIC</span></a></div><br>
+            <span style="color:rgb(0, 192, 22)">✦ New Upload ✦</span><br>
+            <div class="blink"><a href="https://www.youtube.com/watch?v=CvO8WpUAgx0" target="_blank"><span class="new" style="color: rgb(0, 215, 25)">MOB Violent</span></a></div><br>
+            <div class="edit">【Edited: 02/2023】</div>
+
+            
+            <div class="bgc">
+                
+                <h2 class="title" style="text-align:center"><b><a name="TAKAX MUSIC">TAKAX MUSIC</a></b></h2>
+
+                <div class="top" style="text-align:center">
+                    <b><font size="6">About <a href="https://www.youtube.com/channel/UC7hE2BE8Cf-7aqFawvWrHxQ" target="_blank"><span style="color:rgb(71, 218, 49)">TAKAX MUSIC</span></font></a></b>
+                    <font size="3">←Click!</font><br>
+                    <font size="4">Making more than <span style="color:rgb(59, 185, 40)"><span class="under">50 original music (including " free to use ")</span></span><br>
+                    You can also check with High Quality and Download<br>
+                    from <a href="https://soundcloud.com/takax-music" target="_blank"><b><span style="color:rgb(71, 218, 49)">SoundCloud</span></b></a></font><font size="3"> ←Click!</font><br>
+                    
+                    </div>
+                    <br>
+
+                    <div style="text-align:left">
+
+                <h2 class="title" style="text-align:center"><b><a name="Beat Music">Beat Music</a></b></h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=CvO8WpUAgx0" target="_blank">MOB Violent</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=GSc4nudIrOA" target="_blank">The Winter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=yrMhjD_Hi2w" target="_blank">On My Way</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=gMnn83LM3YY" target="_blank">Purple Sky</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=vrUDJ25uFYk" target="_blank">Summer Beach</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=op0SXwTpWOA" target="_blank">Summer Disco</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=5fiiIUAJtC4&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=4" target="_blank">MOB</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=GoSABNR1Q0E&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=5" target="_blank">Town Network</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=kAQgQERdPrw&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=6" target="_blank">Breakthrough Advanced</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=qY8Pt6nMT5o&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=7" target="_blank">Shooting Reloaded Edition</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=TCp-7IMnDS4&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=8" target="_blank">Breakthrough</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=OUbRO1yIctE&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=11" target="_blank">My Way Concentrated Edition</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=nPcUHIL0bkg&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=13" target="_blank">The Second Wave</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=7B2AuHNhnW0&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=14" target="_blank">Trial And Error</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=wjDkUlyK7dA&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=15" target="_blank">Pandemic</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=8xHM-pa5Rrw&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=18" target="_blank">MORE FORWARD</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=5VuhWJ2IWCY&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=20" target="_blank">Shooting</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=-CekoLqAagI&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&index=22" target="_blank">My way</a></li>
+                </ul>
+                                
+                <h2 class="title" style="text-align:center"><b><a name="Lo-Fi Beats">Lo-Fi Beats</a></b></h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=Eej9zneMePE&list=PLEmsMKDtatMWyDoDrcGvZWqFmcwd6f2GE&index=4" target="_blank">Snow in the mclassnight</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=i2JnEfcills&list=PLEmsMKDtatMWyDoDrcGvZWqFmcwd6f2GE&index=3" target="_blank">Blue sky</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=RstKAYiCETc&list=PLEmsMKDtatMWyDoDrcGvZWqFmcwd6f2GE&index=5" target="_blank">Come Back Home</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=pBQ1LLiq8_4&list=PLEmsMKDtatMWyDoDrcGvZWqFmcwd6f2GE&index=2" target="_blank">Staying up late</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=iiOzoSkmqgc&list=PLEmsMKDtatMWyDoDrcGvZWqFmcwd6f2GE&index=1" target="_blank">Commuting Time</a></li>
+                </ul>
+                                
+                <h2 class="title" style="text-align:center"><b><a name="Wagakki - Shamisen Beats">Wagakki - Shamisen Beats</a></b></h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=-pNwriEUm0A&list=PLEmsMKDtatMVhBt4utVdOKC1f0gKsK7ay&index=3" target="_blank">松 Matsu</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=RXl3RUobRCs&list=PLEmsMKDtatMVhBt4utVdOKC1f0gKsK7ay&index=1" target="_blank">Shamisen Beat</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=RHz4xySvgxc&list=PLEmsMKDtatMVhBt4utVdOKC1f0gKsK7ay&index=2" target="_blank">Shamisen Beat 2</a></li>
+                </ul>
+
+                <h2 class="title" style="text-align:center"><b><a name="Piano">Piano</a></b></h2>
+                <ul>
+                <li><a href="https://www.youtube.com/watch?v=BGwgb4NxPPg&list=PLEmsMKDtatMUbSjmuBD4-aTMWSK0WUUJQ" target="_blank">Trial And Error Piano Edition</a></li>
+                </ul>
+
+                <h2 class="title" style="text-align:center"><b><a name="Free To Use">Free To Use</a></b></h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=FBWDzf-0nKk&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_" target="_blank">Neko</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=HzmD4ghRMSk&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=2" target="_blank">Dreaming</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=HPpTL87hu_g&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=7" target="_blank">Good Night</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Bk5tNOETk1E&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=12" target="_blank">Sprout</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=k0Y4DGJzxYA&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=22" target="_blank">Tango Strings</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=YuZAhQb1oCI&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=23" target="_blank">Mystery</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Qxtnvp6PTtQ&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=33" target="_blank">OASIS</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=cs9QS9RBw6A&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=32" target="_blank">Into the Maze</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=q6caKiZGCk4&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=35" target="_blank">STEPS</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=kSdvXexiudY&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=16" target="_blank">BGM 4</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=m-qWSfIgC2U&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=18" target="_blank">BGM 5</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Dk0YRpc78L8&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=27" target="_blank">BGM 3</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=6YHXCW03fmU&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_&index=30" target="_blank">BGM 1</a></li>
+                    <br>
+                </ul>
+            </div>
+                </div>            
+
+                <!-- 検証 -->
+        
+                <div class="up">
+                <div class="bgc">  
+                    
+                    <p>
+                        <h2 class="title" style="text-align:center"><a name="Music Equipment">Music Equipment</a></h2>
+                        <p>
+                            ■Software■<br>
+                            Ableton Live<br>
+                            <br>
+                            ■Machine■<br>
+                            Windows Surface Pro<br>
+                            <br>
+                            ■Monitor Headphones■<br>
+                            Shure SRH440<br>
+                            Shure Aonic50<br>
+                            <br>
+                            ■Monitor Earphones■<br>
+                            Shure SE215<br>
+                            Final Audio E4000<br>
+                            <br>                        
+                    </p>
+                        
+                </div>
+                </div>
+        
+                <!-- 検証 -->
+        </div>
+        </div>
+        </div>
+
+
+        <div class="right-column">
+
+            <div class="bgc">
+                <!-- <img src=""><br> -->
+                <!-- <a href="" target="_blank"></a> -->
+                <h2 class="title" style="text-align:center"><a name="Playlist">Playlist</a></h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=yrMhjD_Hi2w&list=PLEmsMKDtatMXhWjTZv7y3uLFVZmpJJEKf&ab_channel=TAKAXMUSIC" target="_blank">BEATS Play List</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=iiOzoSkmqgc&list=PLEmsMKDtatMWyDoDrcGvZWqFmcwd6f2GE&ab_channel=TAKAXMUSIC" target="_blank">Lo-Fi Play List</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=DayAW2X10EY&list=PLEmsMKDtatMXxkAZDtKf35-DZba3LkpA_" target="_blank">Free To Use Play List</a></li>
+                </ul>
+
+                <br>    
+                
+                <p>
+                    <h2 class="title" style="text-align:center"><a name="Music Equipment">Music Equipment</a></h2>
+                    <p>
+                        ■Software■<br>
+                        Ableton Live<br>
+                        <br>
+                        ■Machine■<br>
+                        Windows Surface Pro<br>
+                        <br>
+                        ■Monitor Headphones■<br>
+                        Shure SRH440<br>
+                        Shure Aonic50<br>
+                        <br>
+                        ■Monitor Earphones■<br>
+                        Shure SE215<br>
+                        Final Audio E4000<br>
+                        <br>                        
+                </p>
+                    
+            </div>
+        </div>
+    </div>
+    
+</body>
